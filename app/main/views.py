@@ -2,11 +2,6 @@ from flask import render_template,request,redirect,url_for,abort
 from . import main
 
 
-
-
-
-
-# Views
 @main.route('/')
 def index():
 
@@ -14,3 +9,12 @@ def index():
     View root page function that returns the index page and its data
     '''
     return "jkbnjktrnobnorgtbr"
+
+
+@main.route('/signup')
+def signup():
+    '''
+    View root page function that returns the index page and its data
+    '''
+    return render_template('signup.html')
+
